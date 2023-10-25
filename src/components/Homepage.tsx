@@ -42,10 +42,10 @@ const Homepage = () => {
         <h2 className="textheader">IP Address Tracker</h2>
         <div className="formsetup">
           <div className="cardbackgound">
-            <input type='text' id='ipfield' name='ip' placeholder='Search for any ip address or domain'></input>
+            <input aria-label='search' type='text' id='ipfield' name='ip' placeholder='Search for any ip address or domain'></input>
 
-            <button className="querybutton" onClick={()=>getURL()}>
-              <img src={arrowsvg}></img>
+            <button className="querybutton" onClick={()=>getURL()} aria-label="search">
+              <img src={arrowsvg} alt='button-arrow'></img>
             </button>
           </div>
           <div className='infocardbackgound'>
