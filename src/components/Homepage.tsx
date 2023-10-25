@@ -5,6 +5,7 @@ import {useState} from 'react'
 import { is600pxWidth } from './mediaq';
 import axios from 'axios';
 
+
 const Homepage = () => {
 
 
@@ -67,8 +68,9 @@ const Homepage = () => {
           </div>
         </div>
         <img
-          src={isNotDesktop?"/images/pattern-bg-desktop.png": "/images/pattern-bg-mobile.png"}
+          src={isNotDesktop?window.location.origin+"/images/pattern-bg-desktop.png": window.location.origin+"/images/pattern-bg-mobile.png"}
           className="backdrop"
+          alt='backdrop'
         />
         <div className='mapcontainer'>
           <MapView longitude={post.longitude} latitude={post.latitude}/>
