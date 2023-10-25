@@ -68,7 +68,7 @@ const Homepage = () => {
           </div>
         </div>
         <img
-          src={isNotDesktop?window.location.origin+"/pattern-bg-desktop.png": "/pattern-bg-mobile.png"}
+          src={isNotDesktop?"/pattern-bg-desktop.png": "/pattern-bg-mobile.png"}
           className="backdrop"
           alt='backdrop'
         />
