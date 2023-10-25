@@ -89,13 +89,13 @@ body .mapcontainer {
   
 }
 
-body .mapview{
+/* body .mapview{ */
   /* width: 400px; */
   /* height: 400px; */
 
 
   
-}
+/* } */
 
 .leaflet-container{
   height: 100%;
