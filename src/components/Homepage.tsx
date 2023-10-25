@@ -42,7 +42,7 @@ const Homepage = () => {
         <h2 className="textheader">IP Address Tracker</h2>
         <div className="formsetup">
           <div className="cardbackgound">
-            <input type='text' id='ipfield' name='ip'></input>
+            <input type='text' id='ipfield' name='ip' placeholder='Search for any ip address or domain'></input>
 
             <button className="querybutton" onClick={()=>getURL()}>
               <img src={arrowsvg}></img>
